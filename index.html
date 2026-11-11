@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>꿀템창고 🍯 | 영상 속 꿀템 최저가 &amp; 실시간 핫딜</title>
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+    body {
+      font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+      background-color: #f2f4f6;
+      color: #191f28;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px 16px 40px;
+    }
+    .container {
+      width: 100%;
+      max-width: 420px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .profile-card {
+      background: #ffffff;
+      border-radius: 28px;
+      padding: 28px 20px 22px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+    .avatar-wrap {
+      position: relative;
+      width: 88px;
+      height: 88px;
+    }
+    .avatar {
+      width: 88px;
+      height: 88px;
+      border-radius: 28px;
+      object-fit: cover;
+      box-shadow: 0 8px 24px rgba(255, 184, 0, 0.25);
+    }
+    .profile-title {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: #191f28;
+    }
+    .profile-bio {
+      font-size: 14px;
+      color: #4e5968;
+      line-height: 1.45;
+      word-break: keep-all;
+    }
+    .disclaimer-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #f8f9fa;
+      border: 1px solid #e5e8eb;
+      border-radius: 20px;
+      padding: 6px 12px;
+      font-size: 11px;
+      color: #8b95a1;
+      font-weight: 500;
+      margin-top: 4px;
+    }
+    .section-label {
+      font-size: 13px;
+      font-weight: 700;
+      color: #8b95a1;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 0 6px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .section-label span {
+      background: #ff3b30;
+      color: #fff;
+      font-size: 10px;
+      font-weight: 800;
+      padding: 2px 7px;
+      border-radius: 10px;
+    }
+    .product-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .product-card {
+      background: #ffffff;
+      border-radius: 22px;
+      padding: 16px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      border: 1px solid #f2f4f6;
+    }
+    .product-card:active {
+      transform: scale(0.98);
+      background-color: #fafbfc;
+    }
+    .product-thumb-wrap {
+      position: relative;
+      width: 82px;
+      height: 82px;
+      flex-shrink: 0;
+      border-radius: 16px;
+      overflow: hidden;
+      background: #f8f9fa;
+    }
+    .product-thumb {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .item-num-badge {
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      background: rgba(25, 31, 40, 0.85);
+      color: #ffffff;
+      font-size: 10px;
+      font-weight: 800;
+      padding: 2px 6px;
+      border-radius: 6px;
+      backdrop-filter: blur(4px);
+    }
+    .product-info {
+      flex: 1;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .product-tag {
+      font-size: 11px;
+      font-weight: 700;
+      color: #3182f6;
+    }
+    .product-name {
+      font-size: 15px;
+      font-weight: 700;
+      color: #191f28;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      letter-spacing: -0.3px;
+    }
+    .product-meta {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 2px;
+    }
+    .price-val {
+      font-size: 16px;
+      font-weight: 800;
+      color: #191f28;
+    }
+    .discount-badge {
+      background: #ffebee;
+      color: #e52528;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 2px 6px;
+      border-radius: 6px;
+    }
+    .rocket-badge {
+      background: #e8f3ff;
+      color: #0073e9;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 2px 6px;
+      border-radius: 6px;
+    }
+    .btn-buy {
+      background: #0073e9;
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 8px 12px;
+      border-radius: 12px;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      box-shadow: 0 2px 8px rgba(0, 115, 233, 0.25);
+    }
+    .btn-buy.secondary {
+      background: #f2f4f6;
+      color: #4e5968;
+      box-shadow: none;
+    }
+    .extra-links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .channel-btn {
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 16px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-decoration: none;
+      color: #191f28;
+      font-size: 14px;
+      font-weight: 700;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03);
+      border: 1px solid #f2f4f6;
+      transition: transform 0.15s ease;
+    }
+    .channel-btn:active {
+      transform: scale(0.98);
+    }
+    .channel-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .channel-icon {
+      font-size: 20px;
+    }
+    .channel-arrow {
+      color: #b0b8c1;
+      font-size: 16px;
+    }
+    .footer {
+      text-align: center;
+      font-size: 11px;
+      color: #8b95a1;
+      line-height: 1.5;
+      padding: 12px 0 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="profile-card">
+      <div class="avatar-wrap">
+        <img class="avatar" src="assets/profile.png" alt="꿀템창고">
+      </div>
+      <h1 class="profile-title">꿀템창고 🍯</h1>
+      <p class="profile-bio">매일 삶의 질을 확 올려주는 1분 쿠팡 꿀템 &amp; 생활 핫딜 모음</p>
+      <div class="disclaimer-badge">
+        <span>🔒</span> 쿠팡 파트너스 활동으로 수수료를 제공받습니다
+      </div>
+    </div>
+
+    <div class="section-label">
+      오늘 영상 속 꿀템 <span>NEW</span>
+    </div>
+    <div class="product-list">
+
+      <!-- Item 1 -->
+      <a class="product-card" href="https://link.coupang.com/a/iACeuVKLq8" target="_blank" rel="noopener noreferrer">
+        <div class="product-thumb-wrap">
+          <img class="product-thumb" src="assets/living_vacuum.png" alt="핸디형 무선 미니 청소기">
+          <div class="item-num-badge">01번</div>
+        </div>
+        <div class="product-info">
+          <div class="product-tag">책상·원룸 청소 3초 컷</div>
+          <div class="product-name">핸디형 무선 미니 청소기</div>
+          <div class="product-meta">
+            <span class="price-val">29,800원</span>
+            <span class="rocket-badge">로켓배송</span>
+          </div>
+        </div>
+        <div class="btn-buy">
+          구매하기 ➔
+        </div>
+      </a>
+
+      <!-- Item 2 -->
+      <a class="product-card" href="https://link.coupang.com/a/iACiFQU8Oq" target="_blank" rel="noopener noreferrer">
+        <div class="product-thumb-wrap">
+          <img class="product-thumb" src="assets/living_mat.png" alt="소프트 규조토 발매트">
+          <div class="item-num-badge">02번</div>
+        </div>
+        <div class="product-info">
+          <div class="product-tag">빨래 걱정 없는 세탁 가능 매트</div>
+          <div class="product-name">소프트 규조토 발매트</div>
+          <div class="product-meta">
+            <span class="price-val">11,900원</span>
+            <span class="discount-badge">40% 특가</span>
+          </div>
+        </div>
+        <div class="btn-buy">
+          구매하기 ➔
+        </div>
+      </a>
+
+      <!-- Item 3 -->
+      <a class="product-card" href="https://link.coupang.com/a/iACmJ9LnZQ" target="_blank" rel="noopener noreferrer">
+        <div class="product-thumb-wrap">
+          <img class="product-thumb" src="assets/living_trashcan.png" alt="모션감지 자동 센서 쓰레기통">
+          <div class="item-num-badge">03번</div>
+        </div>
+        <div class="product-info">
+          <div class="product-tag">원룸 냄새·벌레 완벽 차단</div>
+          <div class="product-name">모션감지 자동 센서 쓰레기통</div>
+          <div class="product-meta">
+            <span class="price-val">18,900원</span>
+            <span class="rocket-badge">로켓배송</span>
+          </div>
+        </div>
+        <div class="btn-buy">
+          구매하기 ➔
+        </div>
+      </a>
+    </div>
+
+
+    <div class="section-label">
+      실시간 핫딜 &amp; 채널
+    </div>
+    <div class="extra-links">
+      <a class="channel-btn" href="https://t.me/ym_hotdeal" target="_blank" rel="noopener noreferrer">
+        <div class="channel-left">
+          <span class="channel-icon">🚀</span>
+          <span>실시간 쿠팡 핫딜 모음 (텔레그램)</span>
+        </div>
+        <span class="channel-arrow">➔</span>
+      </a>
+      <a class="channel-btn" href="https://youtube.com/@gooditem_archive_kr" target="_blank" rel="noopener noreferrer">
+        <div class="channel-left">
+          <span class="channel-icon">📺</span>
+          <span>유튜브 꿀템창고 채널 바로가기</span>
+        </div>
+        <span class="channel-arrow">➔</span>
+      </a>
+    </div>
+
+    <div class="footer">
+      꿀템창고 🍯 | 매일 삶의 질을 올려주는 가성비 필수템<br>
+      © 2026 gooditem_archive. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>
