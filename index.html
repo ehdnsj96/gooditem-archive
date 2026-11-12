@@ -3,61 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>돈값연구소 🧪 | 유튜브 쇼츠 꿀템 최저가 & 실시간 도감</title>
-  <meta name="description" content="유튜브 돈값연구소 쇼츠 속 꿀템 01번, 02번, 03번 최저가 구매 링크 모음">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  <title>돈값연구소 🧪 | 돈값 하는 쿠팡 꿀템 최저가 &amp; 실시간 검색</title>
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
   <style>
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
       -webkit-tap-highlight-color: transparent;
-      font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
     }
     body {
-      background: #f2f4f6;
+      font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+      background-color: #f2f4f6;
       color: #191f28;
       display: flex;
       justify-content: center;
       min-height: 100vh;
-      padding: 0;
+      padding: 16px 14px 40px;
     }
-    .app-container {
+    .container {
       width: 100%;
       max-width: 440px;
-      min-height: 100vh;
-      background: #ffffff;
-      padding: 24px 18px 60px 18px;
-      box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
-      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
     }
+    
+    /* 프로필 카드 */
     .profile-card {
+      background: #ffffff;
+      border-radius: 26px;
+      padding: 24px 20px 20px;
       text-align: center;
-      margin-bottom: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
     }
     .avatar-wrap {
+      position: relative;
       width: 82px;
       height: 82px;
-      margin: 0 auto 12px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, #ffd000, #ff8800);
-      padding: 3px;
-      box-shadow: 0 6px 16px rgba(255, 140, 0, 0.25);
     }
     .avatar {
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-      background: #ffffff;
+      width: 82px;
+      height: 82px;
+      border-radius: 26px;
       object-fit: cover;
+      box-shadow: 0 8px 20px rgba(255, 184, 0, 0.25);
     }
     .profile-title {
       font-size: 22px;
       font-weight: 800;
+      letter-spacing: -0.5px;
       color: #191f28;
-      margin-bottom: 5px;
-      letter-spacing: -0.4px;
     }
     .profile-bio {
       font-size: 13.5px;
@@ -71,148 +71,159 @@
       gap: 5px;
       background: #f8f9fa;
       border: 1px solid #e5e8eb;
-      padding: 4px 10px;
       border-radius: 20px;
+      padding: 5px 12px;
       font-size: 11px;
       color: #8b95a1;
-      margin-top: 10px;
+      font-weight: 500;
     }
-    .control-card {
-      background: #f9fafb;
-      border: 1px solid #e5e8eb;
-      border-radius: 18px;
-      padding: 14px;
-      margin-bottom: 22px;
+
+    /* 검색창 & 카테고리 칩 바 */
+    .search-filter-card {
+      background: #ffffff;
+      border-radius: 22px;
+      padding: 16px;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      position: sticky;
+      top: 10px;
+      z-index: 100;
+      border: 1px solid rgba(0, 115, 233, 0.15);
     }
     .search-box {
       position: relative;
-      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
     }
     .search-icon {
       position: absolute;
-      left: 12px;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 15px;
+      left: 14px;
+      font-size: 16px;
       color: #8b95a1;
       pointer-events: none;
     }
     .search-input {
       width: 100%;
-      height: 42px;
-      background: #ffffff;
-      border: 1.5px solid #e5e8eb;
-      border-radius: 12px;
-      padding: 0 36px 0 36px;
-      font-size: 14px;
+      height: 46px;
+      background: #f2f4f6;
+      border: 1.5px solid transparent;
+      border-radius: 14px;
+      padding: 0 40px 0 40px;
+      font-size: 14.5px;
+      font-family: inherit;
       font-weight: 600;
       color: #191f28;
       outline: none;
       transition: all 0.2s ease;
     }
     .search-input:focus {
+      background: #ffffff;
       border-color: #0073e9;
-      box-shadow: 0 0 0 3px rgba(0, 115, 233, 0.12);
+      box-shadow: 0 0 0 3px rgba(0, 115, 233, 0.15);
     }
     .clear-btn {
       position: absolute;
-      right: 10px;
-      top: 50%;
-      transform: translateY(-50%);
-      background: #e5e8eb;
-      border: none;
-      color: #4e5968;
-      font-size: 12px;
-      width: 20px;
-      height: 20px;
+      right: 12px;
+      width: 22px;
+      height: 22px;
       border-radius: 50%;
+      background: #c1c7cd;
+      color: #ffffff;
+      border: none;
       display: none;
       align-items: center;
       justify-content: center;
+      font-size: 12px;
       cursor: pointer;
     }
+
+    /* 카테고리 칩 필터 */
     .category-pills {
       display: flex;
-      gap: 6px;
+      gap: 7px;
       overflow-x: auto;
       padding-bottom: 2px;
       scrollbar-width: none;
+      -ms-overflow-style: none;
     }
     .category-pills::-webkit-scrollbar {
       display: none;
     }
     .pill-btn {
-      white-space: nowrap;
+      flex-shrink: 0;
+      background: #f2f4f6;
+      border: 1px solid transparent;
+      border-radius: 12px;
       padding: 7px 12px;
-      border-radius: 20px;
       font-size: 12.5px;
       font-weight: 700;
-      border: 1px solid #e5e8eb;
-      background: #ffffff;
       color: #4e5968;
       cursor: pointer;
-      transition: all 0.18s ease;
+      transition: all 0.15s ease;
     }
     .pill-btn.active {
       background: #191f28;
       color: #ffffff;
-      border-color: #191f28;
     }
-    .video-group {
-      margin-bottom: 24px;
-    }
-    .video-group-header {
+
+    /* 섹션 라벨 */
+    .section-label {
+      font-size: 13.5px;
+      font-weight: 800;
+      color: #4e5968;
+      padding: 4px 6px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 6px 4px 10px 4px;
-      border-bottom: 2px solid #f2f4f6;
-      margin-bottom: 12px;
     }
-    .video-group-title {
-      font-size: 15px;
+    .section-label .badge-new {
+      background: #ff3b30;
+      color: #fff;
+      font-size: 10px;
       font-weight: 800;
-      color: #191f28;
-      letter-spacing: -0.3px;
+      padding: 2px 7px;
+      border-radius: 10px;
     }
-    .video-group-tag {
-      font-size: 11px;
-      font-weight: 700;
+    .count-indicator {
+      font-size: 12px;
+      font-weight: 600;
       color: #0073e9;
-      background: #e8f3ff;
-      padding: 2px 8px;
-      border-radius: 12px;
     }
+
+    /* 제품 리스트 & 카드 */
     .product-list {
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 10px;
     }
     .product-card {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 14px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03);
       display: flex;
       align-items: center;
-      gap: 12px;
-      background: #ffffff;
-      border: 1px solid #eef0f3;
-      border-radius: 16px;
-      padding: 12px;
+      gap: 14px;
       text-decoration: none;
       color: inherit;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
-      transition: all 0.18s ease;
+      transition: transform 0.15s ease, background 0.15s ease;
+      border: 1px solid #f2f4f6;
     }
     .product-card:active {
-      transform: scale(0.985);
-      background: #f8f9fa;
+      transform: scale(0.98);
+      background-color: #fafbfc;
     }
     .product-thumb-wrap {
+      position: relative;
       width: 78px;
       height: 78px;
-      border-radius: 12px;
-      overflow: hidden;
       flex-shrink: 0;
-      background: #f2f4f6;
-      position: relative;
+      border-radius: 14px;
+      overflow: hidden;
+      background: #f8f9fa;
+      border: 1px solid #edf0f3;
     }
     .product-thumb {
       width: 100%;
@@ -223,9 +234,9 @@
       position: absolute;
       top: 4px;
       left: 4px;
-      background: rgba(0, 115, 233, 0.95);
+      background: rgba(0, 115, 233, 0.9);
       color: #ffffff;
-      font-size: 11px;
+      font-size: 9.5px;
       font-weight: 800;
       padding: 2px 6px;
       border-radius: 5px;
@@ -237,7 +248,7 @@
       left: 4px;
       background: rgba(25, 31, 40, 0.85);
       color: #ffffff;
-      font-size: 9.5px;
+      font-size: 8.5px;
       font-weight: 700;
       padding: 2px 5px;
       border-radius: 4px;
@@ -246,30 +257,29 @@
     .product-info {
       flex: 1;
       min-width: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
     }
     .product-tag {
-      font-size: 11.5px;
+      font-size: 11px;
       font-weight: 700;
       color: #0073e9;
-      margin-bottom: 2px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
     }
     .product-name {
       font-size: 14.5px;
       font-weight: 700;
       color: #191f28;
-      line-height: 1.35;
-      margin-bottom: 5px;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      letter-spacing: -0.3px;
     }
     .product-meta {
       display: flex;
       align-items: center;
       gap: 6px;
+      margin-top: 1px;
     }
     .price-val {
       font-size: 15.5px;
@@ -293,48 +303,107 @@
       border-radius: 5px;
     }
     .btn-buy {
-      padding: 9px 13px;
-      border-radius: 11px;
-      font-size: 12.5px;
-      font-weight: 800;
-      flex-shrink: 0;
       background: #0073e9;
       color: #ffffff;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 8px 12px;
+      border-radius: 12px;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      box-shadow: 0 2px 8px rgba(0, 115, 233, 0.25);
     }
     .btn-buy.secondary {
       background: #f2f4f6;
-      color: #191f28;
+      color: #4e5968;
+      box-shadow: none;
     }
+
+    /* 검색 결과 없음 배너 */
     .no-results {
       display: none;
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 26px 18px;
       text-align: center;
-      padding: 40px 20px;
-      background: #f9fafb;
-      border-radius: 16px;
-      margin-top: 10px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.03);
     }
-    .footer-links {
-      margin-top: 30px;
+    .no-results-icon {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+    .no-results-title {
+      font-size: 15px;
+      font-weight: 800;
+      color: #191f28;
+      margin-bottom: 4px;
+    }
+    .no-results-desc {
+      font-size: 12.5px;
+      color: #8b95a1;
+      margin-bottom: 16px;
+    }
+    .btn-coupang-search {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      background: #0073e9;
+      color: #ffffff;
+      font-size: 13.5px;
+      font-weight: 700;
+      padding: 12px 18px;
+      border-radius: 14px;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0, 115, 233, 0.3);
+    }
+
+    .extra-links {
       display: flex;
       flex-direction: column;
       gap: 10px;
+      margin-top: 8px;
     }
-    .footer-btn {
+    .channel-btn {
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 15px 18px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      background: #f2f4f6;
-      border-radius: 14px;
-      padding: 13px 16px;
       text-decoration: none;
       color: #191f28;
       font-size: 13.5px;
       font-weight: 700;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03);
+      border: 1px solid #f2f4f6;
+    }
+    .channel-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .channel-icon {
+      font-size: 18px;
+    }
+    .channel-arrow {
+      color: #b0b8c1;
+      font-size: 15px;
+    }
+    .footer {
+      text-align: center;
+      font-size: 11px;
+      color: #8b95a1;
+      line-height: 1.5;
+      padding: 10px 0 0;
     }
   </style>
 </head>
 <body>
-  <div class="app-container">
+  <div class="container">
+    <!-- 프로필 카드 -->
     <div class="profile-card">
       <div class="avatar-wrap">
         <img class="avatar" src="assets/profile.png" alt="돈값연구소">
@@ -347,10 +416,10 @@
     </div>
 
     <!-- 검색 & 카테고리 필터 카드 -->
-    <div class="control-card">
+    <div class="search-filter-card">
       <div class="search-box">
         <span class="search-icon">🔍</span>
-        <input type="text" id="searchInput" class="search-input" placeholder="영상 속 꿀템이나 키워드 검색...">
+        <input type="text" id="searchInput" class="search-input" placeholder="영상 속 꿀템이나 키워드 검색..." autocomplete="off">
         <button id="clearBtn" class="clear-btn" aria-label="검색어 지우기">✕</button>
       </div>
       <div class="category-pills">
@@ -362,7 +431,7 @@
       </div>
     </div>
 
-    <!-- 동영상별 꿀템 목록 -->
+    <!-- 영상별 추천 꿀템 그룹 -->
     <div id="catalogContainer">
 
     <div class="video-group" data-group="kitchen">
@@ -397,23 +466,23 @@
           </div>
         </a>
         <a class="product-card catalog-card" 
-           href="https://www.coupang.com/np/search?q=%EA%BE%B8%EB%8D%95%ED%95%9C%20%EA%B7%B8%EB%A6%AD%EC%9A%94%EA%B1%B0%ED%8A%B8&lptag=AF7086198" 
+           href="https://www.coupang.com/np/search?q=%ED%95%AD%EA%B7%A0%20%EC%8B%A4%EB%A6%AC%EC%BD%98%20%EB%B0%B0%EC%88%98%EA%B5%AC%20%EC%BB%A4%EB%B2%84&lptag=AF7086198" 
            target="_blank" 
            rel="noopener noreferrer"
-           data-category="food"
-           data-title="꾸덕한 수제 그릭요거트 대용량"
-           data-desc="치즈처럼 꾸덕한 리얼 그릭!">
+           data-category="kitchen"
+           data-title="항균 실리콘 배수구 커버"
+           data-desc="음식물 찌꺼기 쏙 버리기!">
           <div class="product-thumb-wrap">
-            <img class="product-thumb" src="assets/food_yogurt.png" alt="꾸덕한 수제 그릭요거트 대용량" loading="lazy">
-            <div class="item-num-badge">01번</div>
-            <div class="cat-pill-badge">🥗 식비·간편식</div>
+            <img class="product-thumb" src="assets/kitchen_drain.png" alt="항균 실리콘 배수구 커버" loading="lazy">
+            <div class="item-num-badge">02번</div>
+            <div class="cat-pill-badge">🍳 주방·살림</div>
           </div>
           <div class="product-info">
-            <div class="product-tag">치즈처럼 꾸덕한 리얼 그릭!</div>
-            <div class="product-name">꾸덕한 수제 그릭요거트 대용량</div>
+            <div class="product-tag">음식물 찌꺼기 쏙 버리기!</div>
+            <div class="product-name">항균 실리콘 배수구 커버</div>
             <div class="product-meta">
-              <span class="price-val">14,800원</span>
-              <span class="rocket-badge">로켓프레시</span>
+              <span class="price-val">8,900원</span>
+              <span class="discount-badge">1+1 세트</span>
             </div>
           </div>
           <div class="btn-buy secondary">
@@ -421,172 +490,22 @@
           </div>
         </a>
         <a class="product-card catalog-card" 
-           href="https://www.coupang.com/np/search?q=%ED%94%84%EB%A0%88%EC%8B%9C%EC%A7%80%20%EB%8C%80%ED%8C%8C%20%EC%82%BC%EA%B2%B9%20%EB%B3%B6%EC%9D%8C%EB%B0%A5&lptag=AF7086198" 
+           href="https://www.coupang.com/np/search?q=%EA%B8%B0%EB%A6%84%20%ED%8A%90%20%EB%B0%A9%EC%A7%80%20%EB%AF%B8%EC%84%B8%EB%A7%9D%20%EC%BB%A4%EB%B2%84&lptag=AF7086198" 
            target="_blank" 
            rel="noopener noreferrer"
-           data-category="food"
-           data-title="프레시지 대파 삼겹 볶음밥"
-           data-desc="전자레인지 3분 뚝딱 완성!">
+           data-category="kitchen"
+           data-title="기름 튐 방지 미세망 커버"
+           data-desc="삼겹살 구워도 기름 안 튐!">
           <div class="product-thumb-wrap">
-            <img class="product-thumb" src="assets/food_friedrice.png" alt="프레시지 대파 삼겹 볶음밥" loading="lazy">
-            <div class="item-num-badge">01번</div>
-            <div class="cat-pill-badge">🥗 식비·간편식</div>
+            <img class="product-thumb" src="assets/kitchen_screen.png" alt="기름 튐 방지 미세망 커버" loading="lazy">
+            <div class="item-num-badge">03번</div>
+            <div class="cat-pill-badge">🍳 주방·살림</div>
           </div>
           <div class="product-info">
-            <div class="product-tag">전자레인지 3분 뚝딱 완성!</div>
-            <div class="product-name">프레시지 대파 삼겹 볶음밥</div>
+            <div class="product-tag">삼겹살 구워도 기름 안 튐!</div>
+            <div class="product-name">기름 튐 방지 미세망 커버</div>
             <div class="product-meta">
-              <span class="price-val">13,800원</span>
-              <span class="rocket-badge">로켓프레시</span>
-            </div>
-          </div>
-          <div class="btn-buy secondary">
-            최저가 ➔
-          </div>
-        </a>
-
-        <a class="product-card catalog-card" 
-           href="https://www.coupang.com/np/search?q=%EA%B5%BD%EB%84%A4%20%EB%8B%AD%EA%B0%80%EC%8A%B4%EC%82%B4%20%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%81%AC%20%EB%A7%A4%EC%BD%A4%EA%B0%88%EB%B9%84%EB%A7%9B&lptag=AF7086198" 
-           target="_blank" 
-           rel="noopener noreferrer"
-           data-category="food"
-           data-title="굽네 닭가슴살 스테이크 매콤갈비맛"
-           data-desc="퍽퍽함 제로! 육즙 가득 스테이크">
-          <div class="product-thumb-wrap">
-            <img class="product-thumb" src="assets/food_chicken.png" alt="굽네 닭가슴살 스테이크 매콤갈비맛" loading="lazy">
-            <div class="item-num-badge">01번</div>
-            <div class="cat-pill-badge">🥗 식비·간편식</div>
-          </div>
-          <div class="product-info">
-            <div class="product-tag">퍽퍽함 제로! 육즙 가득 스테이크</div>
-            <div class="product-name">굽네 닭가슴살 스테이크 매콤갈비맛</div>
-            <div class="product-meta">
-              <span class="price-val">19,900원</span>
-              <span class="rocket-badge">로켓프레시</span>
-            </div>
-          </div>
-          <div class="btn-buy secondary">
-            최저가 ➔
-          </div>
-        </a>
-
-        <a class="product-card catalog-card" 
-           href="https://www.coupang.com/np/search?q=%EB%AC%B4%EC%86%8C%EC%9D%8C%20%EC%9D%B8%EC%B2%B4%EA%B3%B5%ED%95%99%20%EB%B2%84%ED%8B%B0%EC%BB%AC%EB%A7%88%EC%9A%B0%EC%8A%A4&lptag=AF7086198" 
-           target="_blank" 
-           rel="noopener noreferrer"
-           data-category="desk"
-           data-title="무소음 인체공학 버티컬마우스"
-           data-desc="손목 꺾임 없는 편안한 각도!">
-          <div class="product-thumb-wrap">
-            <img class="product-thumb" src="assets/desk_mouse.png" alt="무소음 인체공학 버티컬마우스" loading="lazy">
-            <div class="item-num-badge">01번</div>
-            <div class="cat-pill-badge">💻 데스크테리어</div>
-          </div>
-          <div class="product-info">
-            <div class="product-tag">손목 꺾임 없는 편안한 각도!</div>
-            <div class="product-name">무소음 인체공학 버티컬마우스</div>
-            <div class="product-meta">
-              <span class="price-val">19,800원</span>
-              <span class="rocket-badge">로켓배송</span>
-            </div>
-          </div>
-          <div class="btn-buy secondary">
-            최저가 ➔
-          </div>
-        </a>
-
-        <a class="product-card catalog-card" 
-           href="https://www.coupang.com/np/search?q=%EC%8B%9C%EB%A0%A5%EB%B3%B4%ED%98%B8%20%EB%AA%A8%EB%8B%88%ED%84%B0%20%EC%A1%B0%EB%AA%85%EB%B0%94&lptag=AF7086198" 
-           target="_blank" 
-           rel="noopener noreferrer"
-           data-category="desk"
-           data-title="시력보호 모니터 조명바"
-           data-desc="화면 반사 없이 책상만 밝게!">
-          <div class="product-thumb-wrap">
-            <img class="product-thumb" src="assets/desk_lightbar.png" alt="시력보호 모니터 조명바" loading="lazy">
-            <div class="item-num-badge">01번</div>
-            <div class="cat-pill-badge">💻 데스크테리어</div>
-          </div>
-          <div class="product-info">
-            <div class="product-tag">화면 반사 없이 책상만 밝게!</div>
-            <div class="product-name">시력보호 모니터 조명바</div>
-            <div class="product-meta">
-              <span class="price-val">24,900원</span>
-              <span class="discount-badge">눈피로 제로</span>
-            </div>
-          </div>
-          <div class="btn-buy secondary">
-            최저가 ➔
-          </div>
-        </a>
-
-        <a class="product-card catalog-card" 
-           href="https://www.coupang.com/np/search?q=%EC%A0%91%EC%9D%B4%EC%8B%9D%203in1%20%EB%AC%B4%EC%84%A0%EC%B6%A9%EC%A0%84%EA%B8%B0&lptag=AF7086198" 
-           target="_blank" 
-           rel="noopener noreferrer"
-           data-category="desk"
-           data-title="접이식 3in1 무선충전기"
-           data-desc="폰·워치·이어폰 동시 고속충전!">
-          <div class="product-thumb-wrap">
-            <img class="product-thumb" src="assets/desk_charger.png" alt="접이식 3in1 무선충전기" loading="lazy">
-            <div class="item-num-badge">01번</div>
-            <div class="cat-pill-badge">💻 데스크테리어</div>
-          </div>
-          <div class="product-info">
-            <div class="product-tag">폰·워치·이어폰 동시 고속충전!</div>
-            <div class="product-name">접이식 3in1 무선충전기</div>
-            <div class="product-meta">
-              <span class="price-val">28,900원</span>
-              <span class="rocket-badge">로켓배송</span>
-            </div>
-          </div>
-          <div class="btn-buy secondary">
-            최저가 ➔
-          </div>
-        </a>
-
-        <a class="product-card catalog-card" 
-           href="https://link.coupang.com/a/iACmJ9LnZQ" 
-           target="_blank" 
-           rel="noopener noreferrer"
-           data-category="living"
-           data-title="코멧 모션인식 센서 휴지통 10l"
-           data-desc="손 안 대고 버리는 자동 오픈!">
-          <div class="product-thumb-wrap">
-            <img class="product-thumb" src="assets/real_trashcan.png" alt="코멧 모션인식 센서 휴지통 10L" loading="lazy">
-            <div class="item-num-badge">01번</div>
-            <div class="cat-pill-badge">🏠 자취·리빙</div>
-          </div>
-          <div class="product-info">
-            <div class="product-tag">손 안 대고 버리는 자동 오픈!</div>
-            <div class="product-name">코멧 모션인식 센서 휴지통 10L</div>
-            <div class="product-meta">
-              <span class="price-val">12,990원</span>
-              <span class="rocket-badge">로켓배송</span>
-            </div>
-          </div>
-          <div class="btn-buy secondary">
-            최저가 ➔
-          </div>
-        </a>
-
-        <a class="product-card catalog-card" 
-           href="https://link.coupang.com/a/iACiFQU8Oq" 
-           target="_blank" 
-           rel="noopener noreferrer"
-           data-category="living"
-           data-title="코멧 홈 빨아쓰는 규조토 발매트"
-           data-desc="물기 3초 만에 싹 마름!">
-          <div class="product-thumb-wrap">
-            <img class="product-thumb" src="assets/real_mat.png" alt="코멧 홈 빨아쓰는 규조토 발매트" loading="lazy">
-            <div class="item-num-badge">01번</div>
-            <div class="cat-pill-badge">🏠 자취·리빙</div>
-          </div>
-          <div class="product-info">
-            <div class="product-tag">물기 3초 만에 싹 마름!</div>
-            <div class="product-name">코멧 홈 빨아쓰는 규조토 발매트</div>
-            <div class="product-meta">
-              <span class="price-val">8,090원</span>
+              <span class="price-val">12,500원</span>
               <span class="rocket-badge">로켓배송</span>
             </div>
           </div>
@@ -844,25 +763,41 @@
     </div>
     </div>
 
-    <div id="noResults" class="no-results">
+    <!-- 검색 결과 없음 배너 -->
+    <div id="noResults" class="no-results" style="display: none; text-align: center; padding: 40px 20px; background: #f9fafb; border-radius: 16px; margin-top: 10px;">
       <div style="font-size: 32px; margin-bottom: 8px;">🔍</div>
       <div style="font-size: 15px; font-weight: 800; color: #191f28; margin-bottom: 6px;">검색된 꿀템이 없습니다</div>
       <div style="font-size: 13px; color: #8b95a1; margin-bottom: 16px;">다른 키워드로 검색하거나 쿠팡에서 직접 찾아보세요!</div>
-      <a id="coupangSearchBtn" href="https://www.coupang.com" target="_blank" rel="noopener noreferrer" 
+      <a id="coupangSearchBtn" href="https://www.coupang.com" target="_blank" rel="noopener noreferrer"
          style="display: inline-block; background: #0073e9; color: #ffffff; padding: 10px 18px; border-radius: 12px; font-size: 13px; font-weight: 800; text-decoration: none;">
         쿠팡에서 최저가 검색 ➔
       </a>
     </div>
 
-    <div class="footer-links">
-      <a class="footer-btn" href="https://t.me/ym_hotdeal" target="_blank" rel="noopener noreferrer">
-        <span>🚀 실시간 쿠팡 핫딜 모음 (텔레그램)</span>
-        <span>➔</span>
+    <!-- 채널 링크 -->
+    <div class="section-label" style="margin-top: 30px;">
+      실시간 핫딜 &amp; 채널
+    </div>
+    <div class="extra-links">
+      <a class="channel-btn" href="https://t.me/ym_hotdeal" target="_blank" rel="noopener noreferrer">
+        <div class="channel-left">
+          <span class="channel-icon">🚀</span>
+          <span>실시간 쿠팡 핫딜 모음 (텔레그램)</span>
+        </div>
+        <span class="channel-arrow">➔</span>
       </a>
-      <a class="footer-btn" href="https://youtube.com/@dongap_lab" target="_blank" rel="noopener noreferrer">
-        <span>📺 유튜브 돈값연구소 채널 바로가기</span>
-        <span>➔</span>
+      <a class="channel-btn" href="https://youtube.com/@dongap_lab" target="_blank" rel="noopener noreferrer">
+        <div class="channel-left">
+          <span class="channel-icon">📺</span>
+          <span>유튜브 돈값연구소 채널 바로가기</span>
+        </div>
+        <span class="channel-arrow">➔</span>
       </a>
+    </div>
+
+    <div class="footer">
+      돈값연구소 🧪 | 진짜 돈값 하는 가성비 필수템<br>
+      © 2026 dongap_lab. All rights reserved.
     </div>
   </div>
 
@@ -871,7 +806,6 @@
     const clearBtn = document.getElementById("clearBtn");
     const pillBtns = document.querySelectorAll(".pill-btn");
     const videoGroups = document.querySelectorAll(".video-group");
-    const catalogCards = document.querySelectorAll(".catalog-card");
     const noResults = document.getElementById("noResults");
     const coupangSearchBtn = document.getElementById("coupangSearchBtn");
 
@@ -938,7 +872,7 @@
       });
     });
 
-    // URL Hash routing (e.g. #kitchen, #living, #food, #desk)
+    // URL Hash support (#kitchen, #living, #food, #desk)
     const hash = window.location.hash.replace("#", "");
     if (hash && ["kitchen", "living", "food", "desk"].includes(hash)) {
       const targetBtn = document.querySelector(`.pill-btn[data-filter="${hash}"]`);

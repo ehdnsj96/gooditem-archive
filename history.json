@@ -8,7 +8,7 @@
     "img_name": "kitchen_opener.png",
     "coupang_url": "https://www.coupang.com/np/search?q=%EC%A0%84%EB%8F%99%20%EC%99%80%EC%9D%B8%EC%98%A4%ED%94%84%EB%84%88&lptag=AF7086198",
     "category_key": "kitchen",
-    "category_title": "🍳 주방 살림 혁명 TOP 3",
+    "category_title": "주방 살림 혁명",
     "item_num": 1
   },
   {
@@ -20,7 +20,7 @@
     "img_name": "kitchen_drain.png",
     "coupang_url": "https://www.coupang.com/np/search?q=%ED%95%AD%EA%B7%A0%20%EC%8B%A4%EB%A6%AC%EC%BD%98%20%EB%B0%B0%EC%88%98%EA%B5%AC%20%EC%BB%A4%EB%B2%84&lptag=AF7086198",
     "category_key": "kitchen",
-    "category_title": "🍳 주방 살림 혁명 TOP 3",
+    "category_title": "주방 살림 혁명",
     "item_num": 2
   },
   {
@@ -32,7 +32,7 @@
     "img_name": "kitchen_screen.png",
     "coupang_url": "https://www.coupang.com/np/search?q=%EA%B8%B0%EB%A6%84%20%ED%8A%90%20%EB%B0%A9%EC%A7%80%20%EB%AF%B8%EC%84%B8%EB%A7%9D%20%EC%BB%A4%EB%B2%84&lptag=AF7086198",
     "category_key": "kitchen",
-    "category_title": "🍳 주방 살림 혁명 TOP 3",
+    "category_title": "주방 살림 혁명",
     "item_num": 3
   },
   {
@@ -44,19 +44,19 @@
     "img_name": "real_vacuum.png",
     "coupang_url": "https://link.coupang.com/a/iACeuVKLq8",
     "category_key": "living",
-    "category_title": "🏠 자취생 삶의 질 떡상 TOP 3",
+    "category_title": "자취생 삶의 질 떡상",
     "item_num": 1
   },
   {
-    "item_id": "kitchen_opener",
-    "title": "전동 원터치 자동 오프너",
-    "desc": "버튼 하나로 코르크 자동 오픈!",
+    "item_id": "living_mat",
+    "title": "코멧 홈 빨아쓰는 규조토 발매트",
+    "desc": "물기 3초 만에 싹 마름!",
     "tag": "로켓배송",
     "price": "8,090원",
     "img_name": "real_mat.png",
     "coupang_url": "https://link.coupang.com/a/iACiFQU8Oq",
     "category_key": "living",
-    "category_title": "🏠 자취생 삶의 질 떡상 TOP 3",
+    "category_title": "자취생 삶의 질 떡상",
     "item_num": 2
   },
   {
@@ -68,7 +68,7 @@
     "img_name": "real_trashcan.png",
     "coupang_url": "https://link.coupang.com/a/iACmJ9LnZQ",
     "category_key": "living",
-    "category_title": "🏠 자취생 삶의 질 떡상 TOP 3",
+    "category_title": "자취생 삶의 질 떡상",
     "item_num": 3
   },
   {
@@ -80,7 +80,7 @@
     "img_name": "food_chicken.png",
     "coupang_url": "https://www.coupang.com/np/search?q=%EA%B5%BD%EB%84%A4%20%EB%8B%AD%EA%B0%80%EC%8A%B4%EC%82%B4%20%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%81%AC%20%EB%A7%A4%EC%BD%A4%EA%B0%88%EB%B9%84%EB%A7%9B&lptag=AF7086198",
     "category_key": "food",
-    "category_title": "🥗 식비 절약 가성비 간편식 TOP 3",
+    "category_title": "식비 절약 가성비 간편식",
     "item_num": 1
   },
   {
@@ -92,7 +92,7 @@
     "img_name": "food_friedrice.png",
     "coupang_url": "https://www.coupang.com/np/search?q=%ED%94%84%EB%A0%88%EC%8B%9C%EC%A7%80%20%EB%8C%80%ED%8C%8C%20%EC%82%BC%EA%B2%B9%20%EB%B3%B6%EC%9D%8C%EB%B0%A5&lptag=AF7086198",
     "category_key": "food",
-    "category_title": "🥗 식비 절약 가성비 간편식 TOP 3",
+    "category_title": "식비 절약 가성비 간편식",
     "item_num": 2
   },
   {
@@ -104,7 +104,7 @@
     "img_name": "food_yogurt.png",
     "coupang_url": "https://www.coupang.com/np/search?q=%EA%BE%B8%EB%8D%95%ED%95%9C%20%EA%B7%B8%EB%A6%AD%EC%9A%94%EA%B1%B0%ED%8A%B8&lptag=AF7086198",
     "category_key": "food",
-    "category_title": "🥗 식비 절약 가성비 간편식 TOP 3",
+    "category_title": "식비 절약 가성비 간편식",
     "item_num": 3
   },
   {
@@ -116,7 +116,7 @@
     "img_name": "desk_charger.png",
     "coupang_url": "https://www.coupang.com/np/search?q=%EC%A0%91%EC%9D%B4%EC%8B%9D%203in1%20%EB%AC%B4%EC%84%A0%EC%B6%A9%EC%A0%84%EA%B8%B0&lptag=AF7086198",
     "category_key": "desk",
-    "category_title": "💻 직장인 데스크테리어 TOP 3",
+    "category_title": "직장인 데스크테리어",
     "item_num": 1
   },
   {
@@ -128,7 +128,7 @@
     "img_name": "desk_lightbar.png",
     "coupang_url": "https://www.coupang.com/np/search?q=%EC%8B%9C%EB%A0%A5%EB%B3%B4%ED%98%B8%20%EB%AA%A8%EB%8B%88%ED%84%B0%20%EC%A1%B0%EB%AA%85%EB%B0%94&lptag=AF7086198",
     "category_key": "desk",
-    "category_title": "💻 직장인 데스크테리어 TOP 3",
+    "category_title": "직장인 데스크테리어",
     "item_num": 2
   },
   {
@@ -140,7 +140,7 @@
     "img_name": "desk_mouse.png",
     "coupang_url": "https://www.coupang.com/np/search?q=%EB%AC%B4%EC%86%8C%EC%9D%8C%20%EC%9D%B8%EC%B2%B4%EA%B3%B5%ED%95%99%20%EB%B2%84%ED%8B%B0%EC%BB%AC%EB%A7%88%EC%9A%B0%EC%8A%A4&lptag=AF7086198",
     "category_key": "desk",
-    "category_title": "💻 직장인 데스크테리어 TOP 3",
+    "category_title": "직장인 데스크테리어",
     "item_num": 3
   }
 ]
