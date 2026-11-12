@@ -5,7 +5,7 @@
     "tag": "로켓프레시",
     "desc": "퍽퍽함 제로! 육즙 가득 닭가슴살",
     "img_name": "food_chicken.png",
-    "coupang_url": "https://link.coupang.com/a/food_chicken_01",
+    "coupang_url": "https://www.coupang.com/np/search?q=%EA%B3%B0%EA%B3%B0%20%EC%B4%89%EC%B4%89%ED%95%9C%20%EC%98%A4%EB%B8%90%EA%B5%AC%EC%9D%B4%20%EB%8B%AD%EA%B0%80%EC%8A%B4%EC%82%B4%2010%ED%8C%A9&lptag=AF7086198",
     "category_key": "food"
   },
   {
@@ -14,7 +14,7 @@
     "tag": "로켓프레시",
     "desc": "전자레인지 3분 뚝딱 완성!",
     "img_name": "food_friedrice.png",
-    "coupang_url": "https://link.coupang.com/a/food_friedrice_02",
+    "coupang_url": "https://www.coupang.com/np/search?q=%EA%B3%B0%EA%B3%B0%20%ED%95%9C%EB%81%BC%EB%9A%9D%EB%94%B1%20%EA%B0%80%EC%84%B1%EB%B9%84%20%EB%83%89%EB%8F%99%20%EB%B3%B6%EC%9D%8C%EB%B0%A5%206%EC%A2%85&lptag=AF7086198",
     "category_key": "food"
   },
   {
@@ -23,7 +23,7 @@
     "tag": "로켓프레시",
     "desc": "치즈처럼 꾸덕한 리얼 그릭!",
     "img_name": "food_yogurt.png",
-    "coupang_url": "https://link.coupang.com/a/food_yogurt_03",
+    "coupang_url": "https://www.coupang.com/np/search?q=%EA%B7%B8%EB%A6%AD%EB%8D%B0%EC%9D%B4%20%EC%8B%9C%EA%B7%B8%EB%8B%88%EC%B2%98%20%EB%8C%80%EC%9A%A9%EB%9F%89%20%EA%B7%B8%EB%A6%AD%EC%9A%94%EA%B1%B0%ED%8A%B8&lptag=AF7086198",
     "category_key": "food"
   },
   {
@@ -32,7 +32,7 @@
     "tag": "로켓배송",
     "desc": "버튼 하나로 뚜껑 자동 오픈!",
     "img_name": "kitchen_opener.png",
-    "coupang_url": "https://link.coupang.com/a/kitchen_opener_01",
+    "coupang_url": "https://www.coupang.com/np/search?q=%EC%A0%84%EB%8F%99%20%EC%9B%90%ED%84%B0%EC%B9%98%20%EC%9E%90%EB%8F%99%20%EC%98%A4%ED%94%84%EB%84%88&lptag=AF7086198",
     "category_key": "kitchen"
   },
   {
@@ -41,7 +41,7 @@
     "tag": "1+1 세트",
     "desc": "음식물 찌꺼기 쏙 버리기!",
     "img_name": "kitchen_drain.png",
-    "coupang_url": "https://link.coupang.com/a/kitchen_drain_02",
+    "coupang_url": "https://www.coupang.com/np/search?q=%ED%95%AD%EA%B7%A0%20%EC%8B%A4%EB%A6%AC%EC%BD%98%20%EB%B0%B0%EC%88%98%EA%B5%AC%20%EC%BB%A4%EB%B2%84&lptag=AF7086198",
     "category_key": "kitchen"
   },
   {
@@ -50,7 +50,7 @@
     "tag": "로켓배송",
     "desc": "삼겹살 구워도 기름 안 튐!",
     "img_name": "kitchen_screen.png",
-    "coupang_url": "https://link.coupang.com/a/kitchen_screen_03",
+    "coupang_url": "https://www.coupang.com/np/search?q=%EA%B8%B0%EB%A6%84%20%ED%8A%90%20%EB%B0%A9%EC%A7%80%20%EB%AF%B8%EC%84%B8%EB%A7%9D%20%EC%BB%A4%EB%B2%84&lptag=AF7086198",
     "category_key": "kitchen"
   }
 ]
