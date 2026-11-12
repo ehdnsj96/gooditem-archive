@@ -1,5 +1,32 @@
 [
   {
+    "title": "충전식 무선 보풀제거기",
+    "price": "13,800원",
+    "tag": "로켓배송",
+    "desc": "낡은 니트·코트 3분 만에 새 옷!",
+    "img_name": "living_lint_remover.png",
+    "coupang_url": "https://www.coupang.com/np/search?q=%EC%B6%A9%EC%A0%84%EC%8B%9D%20%EB%AC%B4%EC%84%A0%20%EB%B3%B4%ED%92%80%EC%A0%9C%EA%B1%B0%EA%B8%B0&lptag=AF7086198",
+    "category_key": "living"
+  },
+  {
+    "title": "슬림 틈새 슬라이딩 수납장",
+    "price": "14,900원",
+    "tag": "무료배송",
+    "desc": "냉장고 옆 틈새 15cm의 기적!",
+    "img_name": "living_storage_cart.png",
+    "coupang_url": "https://www.coupang.com/np/search?q=%EC%8A%AC%EB%A6%BC%20%ED%8B%88%EC%83%88%20%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%94%A9%20%EC%88%98%EB%82%A9%EC%9E%A5&lptag=AF7086198",
+    "category_key": "living"
+  },
+  {
+    "title": "접이식 원룸 빨래건조대",
+    "price": "19,800원",
+    "tag": "로켓배송",
+    "desc": "접으면 두께 5cm로 틈새 쏙!",
+    "img_name": "living_drying_rack.png",
+    "coupang_url": "https://www.coupang.com/np/search?q=%EC%A0%91%EC%9D%B4%EC%8B%9D%20%EC%9B%90%EB%A3%B8%20%EB%B9%A8%EB%9E%98%EA%B1%B4%EC%A1%B0%EB%8C%80&lptag=AF7086198",
+    "category_key": "living"
+  },
+  {
     "item_id": "kitchen_screen",
     "title": "기름 튐 방지 미세망 커버",
     "desc": "삼겹살 구워도 기름 안 튐!",
