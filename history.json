@@ -1,1 +1,56 @@
-[]
+[
+  {
+    "title": "곰곰 촉촉한 오븐구이 닭가슴살 10팩",
+    "price": "19,900원",
+    "tag": "로켓프레시",
+    "desc": "퍽퍽함 제로! 육즙 가득 닭가슴살",
+    "img_name": "food_chicken.png",
+    "coupang_url": "https://link.coupang.com/a/food_chicken_01",
+    "category_key": "food"
+  },
+  {
+    "title": "곰곰 한끼뚝딱 가성비 냉동 볶음밥 6종",
+    "price": "13,800원",
+    "tag": "로켓프레시",
+    "desc": "전자레인지 3분 뚝딱 완성!",
+    "img_name": "food_friedrice.png",
+    "coupang_url": "https://link.coupang.com/a/food_friedrice_02",
+    "category_key": "food"
+  },
+  {
+    "title": "그릭데이 시그니처 대용량 그릭요거트",
+    "price": "14,800원",
+    "tag": "로켓프레시",
+    "desc": "치즈처럼 꾸덕한 리얼 그릭!",
+    "img_name": "food_yogurt.png",
+    "coupang_url": "https://link.coupang.com/a/food_yogurt_03",
+    "category_key": "food"
+  },
+  {
+    "title": "전동 원터치 자동 오프너",
+    "price": "15,900원",
+    "tag": "로켓배송",
+    "desc": "버튼 하나로 뚜껑 자동 오픈!",
+    "img_name": "kitchen_opener.png",
+    "coupang_url": "https://link.coupang.com/a/kitchen_opener_01",
+    "category_key": "kitchen"
+  },
+  {
+    "title": "항균 실리콘 배수구 커버",
+    "price": "8,900원",
+    "tag": "1+1 세트",
+    "desc": "음식물 찌꺼기 쏙 버리기!",
+    "img_name": "kitchen_drain.png",
+    "coupang_url": "https://link.coupang.com/a/kitchen_drain_02",
+    "category_key": "kitchen"
+  },
+  {
+    "title": "기름 튐 방지 미세망 커버",
+    "price": "12,500원",
+    "tag": "로켓배송",
+    "desc": "삼겹살 구워도 기름 안 튐!",
+    "img_name": "kitchen_screen.png",
+    "coupang_url": "https://link.coupang.com/a/kitchen_screen_03",
+    "category_key": "kitchen"
+  }
+]
