@@ -321,7 +321,7 @@
       box-shadow: none;
     }
 
-    /* 검색 결과 없음 & 쿠팡 파트너스 다이렉트 검색 배너 */
+    /* 검색 결과 없음 배너 */
     .no-results {
       display: none;
       background: #ffffff;
@@ -360,7 +360,6 @@
       box-shadow: 0 4px 12px rgba(0, 115, 233, 0.3);
     }
 
-    /* 채널 버튼 및 푸터 */
     .extra-links {
       display: flex;
       flex-direction: column;
@@ -404,7 +403,7 @@
 </head>
 <body>
   <div class="container">
-    <!-- 1. 프로필 카드 -->
+    <!-- 프로필 카드 -->
     <div class="profile-card">
       <div class="avatar-wrap">
         <img class="avatar" src="assets/profile.png" alt="돈값연구소">
@@ -416,15 +415,15 @@
       </div>
     </div>
 
-    <!-- 2. 실시간 검색 & 카테고리 필터 카드 -->
+    <!-- 검색 & 카테고리 필터 카드 -->
     <div class="search-filter-card">
       <div class="search-box">
         <span class="search-icon">🔍</span>
-        <input type="text" id="searchInput" class="search-input" placeholder="찾으시는 꿀템이나 키워드 검색..." autocomplete="off">
+        <input type="text" id="searchInput" class="search-input" placeholder="영상 속 꿀템이나 키워드 검색..." autocomplete="off">
         <button id="clearBtn" class="clear-btn" aria-label="검색어 지우기">✕</button>
       </div>
       <div class="category-pills">
-        <button class="pill-btn active" data-filter="all">🔥 전체</button>
+        <button class="pill-btn active" data-filter="all">🔥 전체 (3)</button>
         <button class="pill-btn" data-filter="living">🏠 자취·리빙</button>
         <button class="pill-btn" data-filter="kitchen">🍳 주방·살림</button>
         <button class="pill-btn" data-filter="food">🥗 식비·간편식</button>
@@ -432,7 +431,7 @@
       </div>
     </div>
 
-    <!-- 3. 오늘 영상 속 꿀템 (Featured) -->
+    <!-- 오늘 영상 속 꿀템 (Featured) -->
     <div id="featuredSection">
       <div class="section-label">
         오늘 영상 속 꿀템 <span class="badge-new">NEW</span>
@@ -495,11 +494,11 @@
       </div>
     </div>
 
-    <!-- 4. 전체 꿀템 도감 (검색/필터링 연동) -->
+    <!-- 누적 꿀템 검색 도감 -->
     <div id="catalogSection">
       <div class="section-label">
-        <span id="catalogTitle">📦 전체 추천 꿀템 도감</span>
-        <span id="matchCount" class="count-indicator">15개</span>
+        <span id="catalogTitle">📦 누적 추천 꿀템 도감</span>
+        <span id="matchCount" class="count-indicator">3개</span>
       </div>
       <div class="product-list" id="catalogList">
 
@@ -511,7 +510,7 @@
            data-title="홈플래닛 무선 핸디 청소기"
            data-desc="머리카락·먼지 흡입 끝판왕!">
           <div class="product-thumb-wrap">
-            <img class="product-thumb" src="assets/real_vacuum.png" alt="홈플래닛 무선 핸디 청소기" loading="lazy">
+            <img class="product-thumb" src="assets/living_vacuum.png" alt="홈플래닛 무선 핸디 청소기" loading="lazy">
             <div class="cat-pill-badge">🏠 자취·리빙</div>
           </div>
           <div class="product-info">
@@ -535,7 +534,7 @@
            data-title="코멧 홈 빨아쓰는 규조토 발매트"
            data-desc="물기 3초 만에 싹 마름!">
           <div class="product-thumb-wrap">
-            <img class="product-thumb" src="assets/real_mat.png" alt="코멧 홈 빨아쓰는 규조토 발매트" loading="lazy">
+            <img class="product-thumb" src="assets/living_mat.png" alt="코멧 홈 빨아쓰는 규조토 발매트" loading="lazy">
             <div class="cat-pill-badge">🏠 자취·리빙</div>
           </div>
           <div class="product-info">
@@ -559,7 +558,7 @@
            data-title="코멧 모션인식 센서 휴지통 10l"
            data-desc="손 안 대고 버리는 자동 오픈!">
           <div class="product-thumb-wrap">
-            <img class="product-thumb" src="assets/real_trashcan.png" alt="코멧 모션인식 센서 휴지통 10L" loading="lazy">
+            <img class="product-thumb" src="assets/living_trashcan.png" alt="코멧 모션인식 센서 휴지통 10L" loading="lazy">
             <div class="cat-pill-badge">🏠 자취·리빙</div>
           </div>
           <div class="product-info">
@@ -574,298 +573,10 @@
             최저가 ➔
           </div>
         </a>
-
-        <a class="product-card catalog-card" 
-           href="https://link.coupang.com/a/living_drying_rack_01" 
-           target="_blank" 
-           rel="noopener noreferrer"
-           data-category="living"
-           data-title="접이식 원룸 빨래건조대"
-           data-desc="접으면 두께 5cm로 틈새 쏙!">
-          <div class="product-thumb-wrap">
-            <img class="product-thumb" src="assets/drying_rack.png" alt="접이식 원룸 빨래건조대" loading="lazy">
-            <div class="cat-pill-badge">🏠 자취·리빙</div>
-          </div>
-          <div class="product-info">
-            <div class="product-tag">접으면 두께 5cm로 틈새 쏙!</div>
-            <div class="product-name">접이식 원룸 빨래건조대</div>
-            <div class="product-meta">
-              <span class="price-val">19,800원</span>
-              <span class="rocket-badge">로켓배송</span>
-            </div>
-          </div>
-          <div class="btn-buy secondary">
-            최저가 ➔
-          </div>
-        </a>
-
-        <a class="product-card catalog-card" 
-           href="https://link.coupang.com/a/living_storage_cart_02" 
-           target="_blank" 
-           rel="noopener noreferrer"
-           data-category="living"
-           data-title="슬림 틈새 슬라이딩 수납장"
-           data-desc="냉장고 옆 틈새 15cm의 기적!">
-          <div class="product-thumb-wrap">
-            <img class="product-thumb" src="assets/storage_cart.png" alt="슬림 틈새 슬라이딩 수납장" loading="lazy">
-            <div class="cat-pill-badge">🏠 자취·리빙</div>
-          </div>
-          <div class="product-info">
-            <div class="product-tag">냉장고 옆 틈새 15cm의 기적!</div>
-            <div class="product-name">슬림 틈새 슬라이딩 수납장</div>
-            <div class="product-meta">
-              <span class="price-val">14,900원</span>
-              <span class="discount-badge">무료배송</span>
-            </div>
-          </div>
-          <div class="btn-buy secondary">
-            최저가 ➔
-          </div>
-        </a>
-
-        <a class="product-card catalog-card" 
-           href="https://link.coupang.com/a/living_lint_remover_03" 
-           target="_blank" 
-           rel="noopener noreferrer"
-           data-category="living"
-           data-title="충전식 무선 보풀제거기"
-           data-desc="낡은 니트·코트 3분 만에 새 옷!">
-          <div class="product-thumb-wrap">
-            <img class="product-thumb" src="assets/lint_remover.png" alt="충전식 무선 보풀제거기" loading="lazy">
-            <div class="cat-pill-badge">🏠 자취·리빙</div>
-          </div>
-          <div class="product-info">
-            <div class="product-tag">낡은 니트·코트 3분 만에 새 옷!</div>
-            <div class="product-name">충전식 무선 보풀제거기</div>
-            <div class="product-meta">
-              <span class="price-val">13,800원</span>
-              <span class="rocket-badge">로켓배송</span>
-            </div>
-          </div>
-          <div class="btn-buy secondary">
-            최저가 ➔
-          </div>
-        </a>
-
-        <a class="product-card catalog-card" 
-           href="https://link.coupang.com/a/kitchen_opener_01" 
-           target="_blank" 
-           rel="noopener noreferrer"
-           data-category="kitchen"
-           data-title="전동 원터치 자동 오프너"
-           data-desc="버튼 하나로 뚜껑 자동 오픈!">
-          <div class="product-thumb-wrap">
-            <img class="product-thumb" src="assets/kitchen_opener.png" alt="전동 원터치 자동 오프너" loading="lazy">
-            <div class="cat-pill-badge">🍳 주방·살림</div>
-          </div>
-          <div class="product-info">
-            <div class="product-tag">버튼 하나로 뚜껑 자동 오픈!</div>
-            <div class="product-name">전동 원터치 자동 오프너</div>
-            <div class="product-meta">
-              <span class="price-val">15,900원</span>
-              <span class="rocket-badge">로켓배송</span>
-            </div>
-          </div>
-          <div class="btn-buy secondary">
-            최저가 ➔
-          </div>
-        </a>
-
-        <a class="product-card catalog-card" 
-           href="https://link.coupang.com/a/kitchen_drain_02" 
-           target="_blank" 
-           rel="noopener noreferrer"
-           data-category="kitchen"
-           data-title="항균 실리콘 배수구 커버"
-           data-desc="음식물 찌꺼기 쏙 버리기!">
-          <div class="product-thumb-wrap">
-            <img class="product-thumb" src="assets/kitchen_drain.png" alt="항균 실리콘 배수구 커버" loading="lazy">
-            <div class="cat-pill-badge">🍳 주방·살림</div>
-          </div>
-          <div class="product-info">
-            <div class="product-tag">음식물 찌꺼기 쏙 버리기!</div>
-            <div class="product-name">항균 실리콘 배수구 커버</div>
-            <div class="product-meta">
-              <span class="price-val">8,900원</span>
-              <span class="discount-badge">1+1 세트</span>
-            </div>
-          </div>
-          <div class="btn-buy secondary">
-            최저가 ➔
-          </div>
-        </a>
-
-        <a class="product-card catalog-card" 
-           href="https://link.coupang.com/a/kitchen_screen_03" 
-           target="_blank" 
-           rel="noopener noreferrer"
-           data-category="kitchen"
-           data-title="기름 튐 방지 미세망 커버"
-           data-desc="삼겹살 구워도 기름 안 튐!">
-          <div class="product-thumb-wrap">
-            <img class="product-thumb" src="assets/kitchen_screen.png" alt="기름 튐 방지 미세망 커버" loading="lazy">
-            <div class="cat-pill-badge">🍳 주방·살림</div>
-          </div>
-          <div class="product-info">
-            <div class="product-tag">삼겹살 구워도 기름 안 튐!</div>
-            <div class="product-name">기름 튐 방지 미세망 커버</div>
-            <div class="product-meta">
-              <span class="price-val">12,500원</span>
-              <span class="rocket-badge">로켓배송</span>
-            </div>
-          </div>
-          <div class="btn-buy secondary">
-            최저가 ➔
-          </div>
-        </a>
-
-        <a class="product-card catalog-card" 
-           href="https://link.coupang.com/a/food_chicken_01" 
-           target="_blank" 
-           rel="noopener noreferrer"
-           data-category="food"
-           data-title="곰곰 촉촉한 오븐구이 닭가슴살 10팩"
-           data-desc="퍽퍽함 제로! 육즙 가득 닭가슴살">
-          <div class="product-thumb-wrap">
-            <img class="product-thumb" src="assets/food_chicken.png" alt="곰곰 촉촉한 오븐구이 닭가슴살 10팩" loading="lazy">
-            <div class="cat-pill-badge">🥗 식비·간편식</div>
-          </div>
-          <div class="product-info">
-            <div class="product-tag">퍽퍽함 제로! 육즙 가득 닭가슴살</div>
-            <div class="product-name">곰곰 촉촉한 오븐구이 닭가슴살 10팩</div>
-            <div class="product-meta">
-              <span class="price-val">19,900원</span>
-              <span class="rocket-badge">로켓프레시</span>
-            </div>
-          </div>
-          <div class="btn-buy secondary">
-            최저가 ➔
-          </div>
-        </a>
-
-        <a class="product-card catalog-card" 
-           href="https://link.coupang.com/a/food_friedrice_02" 
-           target="_blank" 
-           rel="noopener noreferrer"
-           data-category="food"
-           data-title="곰곰 한끼뚝딱 가성비 냉동 볶음밥 6종"
-           data-desc="전자레인지 3분 뚝딱 완성!">
-          <div class="product-thumb-wrap">
-            <img class="product-thumb" src="assets/food_friedrice.png" alt="곰곰 한끼뚝딱 가성비 냉동 볶음밥 6종" loading="lazy">
-            <div class="cat-pill-badge">🥗 식비·간편식</div>
-          </div>
-          <div class="product-info">
-            <div class="product-tag">전자레인지 3분 뚝딱 완성!</div>
-            <div class="product-name">곰곰 한끼뚝딱 가성비 냉동 볶음밥 6종</div>
-            <div class="product-meta">
-              <span class="price-val">13,800원</span>
-              <span class="rocket-badge">로켓프레시</span>
-            </div>
-          </div>
-          <div class="btn-buy secondary">
-            최저가 ➔
-          </div>
-        </a>
-
-        <a class="product-card catalog-card" 
-           href="https://link.coupang.com/a/food_yogurt_03" 
-           target="_blank" 
-           rel="noopener noreferrer"
-           data-category="food"
-           data-title="그릭데이 시그니처 대용량 그릭요거트"
-           data-desc="치즈처럼 꾸덕한 리얼 그릭!">
-          <div class="product-thumb-wrap">
-            <img class="product-thumb" src="assets/food_yogurt.png" alt="그릭데이 시그니처 대용량 그릭요거트" loading="lazy">
-            <div class="cat-pill-badge">🥗 식비·간편식</div>
-          </div>
-          <div class="product-info">
-            <div class="product-tag">치즈처럼 꾸덕한 리얼 그릭!</div>
-            <div class="product-name">그릭데이 시그니처 대용량 그릭요거트</div>
-            <div class="product-meta">
-              <span class="price-val">14,800원</span>
-              <span class="rocket-badge">로켓프레시</span>
-            </div>
-          </div>
-          <div class="btn-buy secondary">
-            최저가 ➔
-          </div>
-        </a>
-
-        <a class="product-card catalog-card" 
-           href="https://link.coupang.com/a/desk_charger_01" 
-           target="_blank" 
-           rel="noopener noreferrer"
-           data-category="desk"
-           data-title="접이식 3in1 무선충전기"
-           data-desc="폰·워치·이어폰 동시 고속충전!">
-          <div class="product-thumb-wrap">
-            <img class="product-thumb" src="assets/desk_charger.png" alt="접이식 3in1 무선충전기" loading="lazy">
-            <div class="cat-pill-badge">💻 데스크테리어</div>
-          </div>
-          <div class="product-info">
-            <div class="product-tag">폰·워치·이어폰 동시 고속충전!</div>
-            <div class="product-name">접이식 3in1 무선충전기</div>
-            <div class="product-meta">
-              <span class="price-val">28,900원</span>
-              <span class="rocket-badge">로켓배송</span>
-            </div>
-          </div>
-          <div class="btn-buy secondary">
-            최저가 ➔
-          </div>
-        </a>
-
-        <a class="product-card catalog-card" 
-           href="https://link.coupang.com/a/desk_lightbar_02" 
-           target="_blank" 
-           rel="noopener noreferrer"
-           data-category="desk"
-           data-title="시력보호 모니터 조명바"
-           data-desc="화면 반사 없이 책상만 밝게!">
-          <div class="product-thumb-wrap">
-            <img class="product-thumb" src="assets/desk_lightbar.png" alt="시력보호 모니터 조명바" loading="lazy">
-            <div class="cat-pill-badge">💻 데스크테리어</div>
-          </div>
-          <div class="product-info">
-            <div class="product-tag">화면 반사 없이 책상만 밝게!</div>
-            <div class="product-name">시력보호 모니터 조명바</div>
-            <div class="product-meta">
-              <span class="price-val">24,900원</span>
-              <span class="discount-badge">눈피로 제로</span>
-            </div>
-          </div>
-          <div class="btn-buy secondary">
-            최저가 ➔
-          </div>
-        </a>
-
-        <a class="product-card catalog-card" 
-           href="https://link.coupang.com/a/desk_mouse_03" 
-           target="_blank" 
-           rel="noopener noreferrer"
-           data-category="desk"
-           data-title="무소음 인체공학 버티컬마우스"
-           data-desc="손목 꺾임 없는 편안한 각도!">
-          <div class="product-thumb-wrap">
-            <img class="product-thumb" src="assets/desk_mouse.png" alt="무소음 인체공학 버티컬마우스" loading="lazy">
-            <div class="cat-pill-badge">💻 데스크테리어</div>
-          </div>
-          <div class="product-info">
-            <div class="product-tag">손목 꺾임 없는 편안한 각도!</div>
-            <div class="product-name">무소음 인체공학 버티컬마우스</div>
-            <div class="product-meta">
-              <span class="price-val">19,800원</span>
-              <span class="rocket-badge">로켓배송</span>
-            </div>
-          </div>
-          <div class="btn-buy secondary">
-            최저가 ➔
-          </div>
-        </a>
       </div>
     </div>
 
-    <!-- 5. 검색 결과 없음 & 쿠팡 파트너스 직행 검색 배너 -->
+    <!-- 검색 결과 없음 배너 -->
     <div id="noResults" class="no-results">
       <div class="no-results-icon">🔎</div>
       <div class="no-results-title">찾으시는 꿀템이 아직 없나요?</div>
@@ -875,7 +586,7 @@
       </a>
     </div>
 
-    <!-- 6. 채널 링크 -->
+    <!-- 채널 링크 -->
     <div class="section-label">
       실시간 핫딜 &amp; 채널
     </div>
@@ -919,14 +630,13 @@
       const query = searchInput.value.trim().toLowerCase();
       let visibleCount = 0;
 
-      // 검색어가 있으면 상단 '오늘 영상 꿀템' 섹션 숨기고 검색 결과에 집중
       if (query.length > 0) {
         featuredSection.style.display = "none";
         catalogTitle.innerText = "🔍 '" + query + "' 검색 결과";
         clearBtn.style.display = "flex";
       } else {
         featuredSection.style.display = "block";
-        catalogTitle.innerText = currentFilter === "all" ? "📦 전체 추천 꿀템 도감" : "📦 카테고리 추천 꿀템";
+        catalogTitle.innerText = currentFilter === "all" ? "📦 누적 추천 꿀템 도감" : "📦 카테고리 추천 꿀템";
         clearBtn.style.display = "none";
       }
 
@@ -948,7 +658,6 @@
 
       matchCount.innerText = visibleCount + "개";
 
-      // 검색 결과 없을 때 쿠팡 다이렉트 검색 배너 활성화
       if (visibleCount === 0) {
         noResults.style.display = "block";
         const searchUrl = "https://www.coupang.com/np/search?q=" + encodeURIComponent(query || "자취꿀템") + "&lptag=AF7086198";

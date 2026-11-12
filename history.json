@@ -1,23 +1,29 @@
 [
   {
-    "title": "코멧 모션인식 센서 휴지통 10L",
-    "price": "12,990원",
+    "title": "홈플래닛 무선 핸디 청소기",
+    "price": "27,990원",
     "tag": "로켓배송",
-    "img_name": "living_trashcan.png",
-    "coupang_url": "https://link.coupang.com/a/iACmJ9LnZQ"
+    "desc": "머리카락·먼지 흡입 끝판왕!",
+    "img_name": "living_vacuum.png",
+    "coupang_url": "https://link.coupang.com/a/iACeuVKLq8",
+    "category_key": "living"
   },
   {
     "title": "코멧 홈 빨아쓰는 규조토 발매트",
     "price": "8,090원",
     "tag": "로켓배송",
+    "desc": "물기 3초 만에 싹 마름!",
     "img_name": "living_mat.png",
-    "coupang_url": "https://link.coupang.com/a/iACiFQU8Oq"
+    "coupang_url": "https://link.coupang.com/a/iACiFQU8Oq",
+    "category_key": "living"
   },
   {
-    "title": "홈플래닛 무선 핸디 청소기",
-    "price": "27,990원",
+    "title": "코멧 모션인식 센서 휴지통 10L",
+    "price": "12,990원",
     "tag": "로켓배송",
-    "img_name": "living_vacuum.png",
-    "coupang_url": "https://link.coupang.com/a/iACeuVKLq8"
+    "desc": "손 안 대고 버리는 자동 오픈!",
+    "img_name": "living_trashcan.png",
+    "coupang_url": "https://link.coupang.com/a/iACmJ9LnZQ",
+    "category_key": "living"
   }
 ]
