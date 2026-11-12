@@ -1,5 +1,59 @@
 [
   {
+    "title": "코멧 모션인식 센서 휴지통 10L",
+    "price": "12,990원",
+    "tag": "로켓배송",
+    "desc": "손 안 대고 버리는 자동 오픈!",
+    "img_name": "living_trashcan.png",
+    "coupang_url": "https://link.coupang.com/a/iACmJ9LnZQ",
+    "category_key": "living"
+  },
+  {
+    "title": "코멧 홈 빨아쓰는 규조토 발매트",
+    "price": "8,090원",
+    "tag": "로켓배송",
+    "desc": "물기 3초 만에 싹 마름!",
+    "img_name": "living_mat.png",
+    "coupang_url": "https://link.coupang.com/a/iACiFQU8Oq",
+    "category_key": "living"
+  },
+  {
+    "title": "홈플래닛 무선 핸디 청소기",
+    "price": "27,990원",
+    "tag": "로켓배송",
+    "desc": "머리카락·먼지 흡입 끝판왕!",
+    "img_name": "living_vacuum.png",
+    "coupang_url": "https://link.coupang.com/a/iACeuVKLq8",
+    "category_key": "living"
+  },
+  {
+    "title": "무소음 인체공학 버티컬마우스",
+    "price": "19,800원",
+    "tag": "로켓배송",
+    "desc": "손목 꺾임 없는 편안한 각도!",
+    "img_name": "desk_mouse.png",
+    "coupang_url": "https://www.coupang.com/np/search?q=%EB%AC%B4%EC%86%8C%EC%9D%8C%20%EC%9D%B8%EC%B2%B4%EA%B3%B5%ED%95%99%20%EB%B2%84%ED%8B%B0%EC%BB%AC%EB%A7%88%EC%9A%B0%EC%8A%A4&lptag=AF7086198",
+    "category_key": "desk"
+  },
+  {
+    "title": "시력보호 모니터 조명바",
+    "price": "24,900원",
+    "tag": "눈피로 제로",
+    "desc": "화면 반사 없이 책상만 밝게!",
+    "img_name": "desk_lightbar.png",
+    "coupang_url": "https://www.coupang.com/np/search?q=%EC%8B%9C%EB%A0%A5%EB%B3%B4%ED%98%B8%20%EB%AA%A8%EB%8B%88%ED%84%B0%20%EC%A1%B0%EB%AA%85%EB%B0%94&lptag=AF7086198",
+    "category_key": "desk"
+  },
+  {
+    "title": "접이식 3in1 무선충전기",
+    "price": "28,900원",
+    "tag": "로켓배송",
+    "desc": "폰·워치·이어폰 동시 고속충전!",
+    "img_name": "desk_charger.png",
+    "coupang_url": "https://www.coupang.com/np/search?q=%EC%A0%91%EC%9D%B4%EC%8B%9D%203in1%20%EB%AC%B4%EC%84%A0%EC%B6%A9%EC%A0%84%EA%B8%B0&lptag=AF7086198",
+    "category_key": "desk"
+  },
+  {
     "title": "곰곰 촉촉한 오븐구이 닭가슴살 10팩",
     "price": "19,900원",
     "tag": "로켓프레시",
