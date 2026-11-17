@@ -1,5 +1,38 @@
 [
   {
+    "item_id": "cleaning_mop",
+    "title": "코멧 스프레이 밀대걸레 + 극세사 패드 5개 + 다용도 클리너 1개",
+    "price": "10,310원",
+    "tag": "로켓배송",
+    "desc": "물통 없이 분사하며 한 번에!",
+    "img_name": "cleaning_mop.png",
+    "coupang_url": "https://www.coupang.com/vp/products/6113657232?itemId=11538728285&vendorItemId=78813769516&lptag=AF7086198",
+    "category_key": "cleaning",
+    "item_num": 1
+  },
+  {
+    "item_id": "cleaning_magicblock",
+    "title": "코멧 매직블럭 중형 100개 + 집게핀 1개, 1세트",
+    "price": "5,980원",
+    "tag": "로켓배송",
+    "desc": "찌든 때는 물만 묻혀 쓱쓱!",
+    "img_name": "cleaning_magicblock.png",
+    "coupang_url": "https://www.coupang.com/vp/products/7790158804?itemId=3987560154&vendorItemId=71971864635&lptag=AF7086198",
+    "category_key": "cleaning",
+    "item_num": 2
+  },
+  {
+    "item_id": "cleaning_duster",
+    "title": "코멧 홈 길이조절 롱 먼지털이개, 혼합색상, 1개",
+    "price": "5,110원",
+    "tag": "로켓배송",
+    "desc": "천장·몰딩 먼지까지 손 닿게!",
+    "img_name": "cleaning_duster.png",
+    "coupang_url": "https://www.coupang.com/vp/products/6994008705?itemId=17126820181&vendorItemId=84300028449&lptag=AF7086198",
+    "category_key": "cleaning",
+    "item_num": 3
+  },
+  {
     "item_id": "desk_charger",
     "title": "맨큐 접이식 3in1 무선충전기",
     "price": "19,800원",
