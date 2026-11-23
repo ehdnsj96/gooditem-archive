@@ -1,5 +1,38 @@
 [
   {
+    "item_id": "bath_shower_filter",
+    "title": "코멧 홈 파워수압 필터 샤워기 본품 + 필터 2개입",
+    "price": "6,290원",
+    "tag": "로켓배송",
+    "desc": "수압은 세게, 물은 깨끗하게!",
+    "img_name": "bath_shower_filter.png",
+    "coupang_url": "https://www.coupang.com/vp/products/7178787283?itemId=18101284961&vendorItemId=85253394509&lptag=AF7086198",
+    "category_key": "bath",
+    "item_num": 1
+  },
+  {
+    "item_id": "bath_microfilter",
+    "title": "코멧 홈 샤워기 헤드 퓨어 마이크로 필터 3개",
+    "price": "7,210원",
+    "tag": "로켓배송",
+    "desc": "갈아주는 순간 물이 달라져요",
+    "img_name": "bath_microfilter.png",
+    "coupang_url": "https://www.coupang.com/vp/products/189592912?itemId=541466221&vendorItemId=4416600777&lptag=AF7086198",
+    "category_key": "bath",
+    "item_num": 2
+  },
+  {
+    "item_id": "bath_slippers",
+    "title": "글랑앤 미끄럼방지 욕실화 실내화 남성용, 그레이",
+    "price": "5,900원",
+    "tag": "BEST AWARDS",
+    "desc": "물기 많은 욕실 바닥 미끄럼 방지",
+    "img_name": "bath_slippers.png",
+    "coupang_url": "https://www.coupang.com/vp/products/6267699231?itemId=12799889489&vendorItemId=80065914547&lptag=AF7086198",
+    "category_key": "bath",
+    "item_num": 3
+  },
+  {
     "item_id": "desk_charger",
     "title": "맨큐 접이식 3in1 무선충전기",
     "price": "19,800원",
