@@ -33,6 +33,39 @@
     "item_num": 3
   },
   {
+    "item_id": "car_diffuser",
+    "title": "코코도르 우드볼 차량용 디퓨저 50ml 2개입",
+    "price": "7,900원",
+    "tag": "로켓배송",
+    "desc": "시동 걸면 은은하게 퍼지는 호텔 향",
+    "img_name": "car_diffuser.png",
+    "coupang_url": "https://www.coupang.com/vp/products/8680115623?itemId=25183113443&vendorItemId=91885198654&lptag=AF7086198",
+    "category_key": "car",
+    "item_num": 1
+  },
+  {
+    "item_id": "car_waterless",
+    "title": "카렉스 스마트 워터리스 카워시 750ml",
+    "price": "4,200원",
+    "tag": "로켓배송",
+    "desc": "물 없이 뿌리고 닦으면 끝!",
+    "img_name": "car_waterless.png",
+    "coupang_url": "https://www.coupang.com/vp/products/96100031?itemId=21817928152&vendorItemId=3728392925&lptag=AF7086198",
+    "category_key": "car",
+    "item_num": 2
+  },
+  {
+    "item_id": "car_wax",
+    "title": "불스원 하이브리드 물왁스 600ml",
+    "price": "5,540원",
+    "tag": "로켓배송",
+    "desc": "물 묻은 차에 뿌리고 닦으면 광택",
+    "img_name": "car_wax.png",
+    "coupang_url": "https://www.coupang.com/vp/products/209472308?itemId=21352632856&vendorItemId=89833893802&lptag=AF7086198",
+    "category_key": "car",
+    "item_num": 3
+  },
+  {
     "item_id": "desk_charger",
     "title": "맨큐 접이식 3in1 무선충전기",
     "price": "19,800원",
