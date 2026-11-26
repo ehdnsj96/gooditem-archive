@@ -229,5 +229,38 @@
     "coupang_url": "https://www.coupang.com/vp/products/9725911694?itemId=29104988493&lptag=AF7086198",
     "category_key": "living",
     "item_num": 3
+  },
+  {
+    "item_id": "winter_handwarmer",
+    "title": "티엘팩토리 충전식 손난로 보조배터리 5000mAh, 플랫블랙",
+    "price": "11,200원",
+    "tag": "로켓배송",
+    "desc": "전원만 켜면 금방 따뜻!",
+    "img_name": "winter_handwarmer.png",
+    "coupang_url": "https://www.coupang.com/vp/products/6130716221?itemId=11689247307&vendorItemId=87188180201&lptag=AF7086198",
+    "category_key": "winter",
+    "item_num": 1
+  },
+  {
+    "item_id": "winter_neckwarmer",
+    "title": "캐럿 이지 넥워머, 블랙, Free",
+    "price": "5,000원",
+    "tag": "로켓배송",
+    "desc": "목만 감싸도 체감 온도 쑥!",
+    "img_name": "winter_neckwarmer.png",
+    "coupang_url": "https://www.coupang.com/vp/products/2145302183?itemId=3642726396&vendorItemId=71628248629&lptag=AF7086198",
+    "category_key": "winter",
+    "item_num": 2
+  },
+  {
+    "item_id": "winter_gloves",
+    "title": "이츠굿텐 보온 플러스 기모 방한 장갑, Black, M",
+    "price": "4,490원",
+    "tag": "로켓배송",
+    "desc": "장갑 끼고도 폰 터치 쏙!",
+    "img_name": "winter_gloves.png",
+    "coupang_url": "https://www.coupang.com/vp/products/9247026267?itemId=20571923542&vendorItemId=87647349184&lptag=AF7086198",
+    "category_key": "winter",
+    "item_num": 3
   }
 ]
