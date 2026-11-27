@@ -198,6 +198,39 @@
     "item_num": 3
   },
   {
+    "item_id": "laundry_lint",
+    "title": "필립스 보풀제거기, GC-026, 블루",
+    "price": "10,610원",
+    "tag": "로켓배송",
+    "desc": "니트·코트 보풀 3초 만에 싹!",
+    "img_name": "laundry_lint.png",
+    "coupang_url": "https://www.coupang.com/vp/products/4947594003?itemId=6529631478&vendorItemId=91289787989&lptag=AF7086198",
+    "category_key": "laundry",
+    "item_num": 1
+  },
+  {
+    "item_id": "laundry_steamer",
+    "title": "홈플래닛 핸디형 스탠드 스팀다리미, MW-801",
+    "price": "26,990원",
+    "tag": "로켓배송",
+    "desc": "옷걸이에 건 채로 구김 1분 컷!",
+    "img_name": "laundry_steamer.png",
+    "coupang_url": "https://www.coupang.com/vp/products/310080038?itemId=977484067&vendorItemId=5392665218&lptag=AF7086198",
+    "category_key": "laundry",
+    "item_num": 2
+  },
+  {
+    "item_id": "laundry_rack",
+    "title": "코멧 홈 접이식 대형 빨래건조대, 그레이, 1개",
+    "price": "15,930원",
+    "tag": "로켓배송",
+    "desc": "실내건조 빨래도 하루면 뽀송!",
+    "img_name": "laundry_rack.png",
+    "coupang_url": "https://www.coupang.com/vp/products/7180955044?itemId=18110930549&vendorItemId=85262569120&lptag=AF7086198",
+    "category_key": "laundry",
+    "item_num": 3
+  },
+  {
     "item_id": "living_vacuum",
     "title": "홈플래닛 무선 핸디 청소기",
     "price": "27,990원",
