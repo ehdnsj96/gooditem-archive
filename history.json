@@ -264,6 +264,39 @@
     "item_num": 3
   },
   {
+    "item_id": "sleep_pillow",
+    "title": "코멧 홈 메모리폼 경추베개, 그레이, 1개",
+    "price": "8,990원",
+    "tag": "로켓배송",
+    "desc": "목이 안 꺾이는 높이 그대로!",
+    "img_name": "sleep_pillow.png",
+    "coupang_url": "https://www.coupang.com/vp/products/5314973223?itemId=20129056696&vendorItemId=87223184831&lptag=AF7086198",
+    "category_key": "sleep",
+    "item_num": 1
+  },
+  {
+    "item_id": "sleep_curtain",
+    "title": "코멧 홈 단열 아일렛 암막 커튼, 차콜 그레이, 135x170cm, 1장",
+    "price": "7,990원",
+    "tag": "로켓배송",
+    "desc": "가로등 빛 완벽 차단, 낮잠도 꿀잠!",
+    "img_name": "sleep_curtain.png",
+    "coupang_url": "https://www.coupang.com/vp/products/180352941?itemId=536034204&vendorItemId=84147368736&lptag=AF7086198",
+    "category_key": "sleep",
+    "item_num": 2
+  },
+  {
+    "item_id": "sleep_mask",
+    "title": "닥터김강 입체 4D 수면안대, 블랙, FREE",
+    "price": "7,900원",
+    "tag": "로켓배송",
+    "desc": "눈 안 눌리는 입체형, 빛 차단 끝!",
+    "img_name": "sleep_mask.png",
+    "coupang_url": "https://www.coupang.com/vp/products/7709524347?itemId=20662396489&vendorItemId=87735082174&lptag=AF7086198",
+    "category_key": "sleep",
+    "item_num": 3
+  },
+  {
     "item_id": "winter_handwarmer",
     "title": "티엘팩토리 충전식 손난로 보조배터리 5000mAh, 플랫블랙",
     "price": "11,200원",
